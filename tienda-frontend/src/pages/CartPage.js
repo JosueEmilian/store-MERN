@@ -1,4 +1,4 @@
-import { Elements } from "@stripe/react-stripe-js";
+// import { Elements } from "@stripe/react-stripe-js";
 import React, { useState } from "react";
 import "./CartPage.css";
 import { useSelector } from "react-redux";

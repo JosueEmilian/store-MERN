@@ -46,8 +46,8 @@ export default function NewProduct() {
   }
 
   function showWidget() {
-    const cloudNamee = process.env.CLOUD_NAME;
-    const uploadPresett = process.env.UPLOAD_PRESET;
+    // const cloudNamee = process.env.CLOUD_NAME;
+    // const uploadPresett = process.env.UPLOAD_PRESET;
 
     const widget = window.cloudinary.createUploadWidget(
       {

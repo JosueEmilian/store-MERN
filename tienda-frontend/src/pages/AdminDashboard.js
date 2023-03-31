@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Nav, Tab, Col, Row, TabContainer } from "react-bootstrap";
-import axios from "../axios";
+import { Container, Nav, Tab, Col, Row } from "react-bootstrap";
+// import axios from "../axios";
 import DashboardPrdoucts from "../components/DashboardPrdoucts";
 import OrdersAdminPage from "../components/OrdersAdminPage";
 import "./AdminDashboard.css";

@@ -1,6 +1,6 @@
 import axios from "../axios";
 import React, { useEffect } from "react";
-import { Col, Navbar, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
 import categories from "../categories";
@@ -77,7 +77,9 @@ function Home() {
         </Row>
       </div>
       <div>
-        <h1></h1>
+        <h1>
+          <p></p>
+        </h1>
       </div>
       <FooterComponent />
     </div>
