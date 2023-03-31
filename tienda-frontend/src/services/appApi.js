@@ -5,7 +5,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const appApi = createApi({
   reducerPath: "appApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "store-mern-eight.vercel.app" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://store-mern-pkf47ktkg-josueemilian.vercel.app",
+  }),
   endpoints: (builder) => ({
     signup: builder.mutation({
       query: (user) => ({
@@ -113,3 +115,6 @@ export const {
 } = appApi;
 
 export default appApi;
+
+//https://store-mern-yno3.vercel.app/category/alimentos
+//https://store-mern-pkf47ktkg-josueemilian.vercel.app/products/category/alimentos
