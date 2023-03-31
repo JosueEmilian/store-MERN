@@ -12,19 +12,24 @@ function CheckoutForm() {
     useCreateOrderMutation();
   const [country, setCountry] = useState("");
   const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
 
   function handlePay(e) {
     e.preventDefault();
-    createOrder({ userId: user._id, cart: user.cart, address, country }).then(
-      (res) => {
-        if (!isLoading && !isError) {
-          setAlertMessage("Orden Creada con exito");
-          setTimeout(() => {
-            navigate("/orders");
-          }, 3000);
-        }
+    createOrder({
+      userId: user._id,
+      cart: user.cart,
+      address,
+      country,
+      phone,
+    }).then((res) => {
+      if (!isLoading && !isError) {
+        setAlertMessage("Orden Creada con exito");
+        setTimeout(() => {
+          navigate("/orders");
+        }, 3000);
       }
-    );
+    });
   }
 
   return (
@@ -58,12 +63,12 @@ function CheckoutForm() {
         <Row>
           <Col md={7}>
             <Form.Group className="mb-3">
-              <Form.Label>Direccion Exacta</Form.Label>
+              <Form.Label>Telefono</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Departamento"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
+                placeholder="Telefono"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 required
               />
             </Form.Group>
@@ -76,6 +81,18 @@ function CheckoutForm() {
                 placeholder="Municipio"
                 value={country}
                 onChange={(e) => setCountry(e.target.value)}
+                required
+              />
+            </Form.Group>
+          </Col>
+          <Col md={12}>
+            <Form.Group className="mb-3">
+              <Form.Label>Direccion Exacta</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Direccion Exacta"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
                 required
               />
             </Form.Group>

@@ -10,6 +10,7 @@ export default function NewProduct() {
   const [name, setName] = React.useState("");
   const [description, setDescription] = React.useState("");
   const [price, setPrice] = React.useState("");
+  const [nombreTienda, setNombreTienda] = React.useState("");
   const [category, setCategory] = React.useState("");
   const [imgToRemove, setImgToRemove] = React.useState(null);
   const [images, setImages] = React.useState([]);
@@ -131,6 +132,17 @@ export default function NewProduct() {
                 <option value="medicamentos">Medicamentos</option>
                 <option value="Enlatados">Enlatados</option>
               </Form.Select>
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Label class="text-danger">Nombre Tienda</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Nombre de la tienda"
+                value={nombreTienda}
+                required
+                onChange={(e) => setNombreTienda(e.target.value)}
+              />
             </Form.Group>
 
             <Form.Group className="mb-3">
