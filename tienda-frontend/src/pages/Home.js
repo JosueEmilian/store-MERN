@@ -23,6 +23,28 @@ function Home() {
 
   return (
     <div>
+      <div className="recent-products-container container mt-4">
+        <h2>Categorias</h2>
+        <Row>
+          {categories.map((category) => (
+            <LinkContainer
+              to={`/category/${category.name.toLocaleLowerCase()}`}
+            >
+              <Col md={4}>
+                <div
+                  style={{
+                    backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${category.img})`,
+                    gap: "5px",
+                  }}
+                  className="category-tile"
+                >
+                  {category.name}
+                </div>
+              </Col>
+            </LinkContainer>
+          ))}
+        </Row>
+      </div>
       {/* <img src={tiendaImg} alt="img-banner" className="home-banner" /> */}
       <div className="featured-products-container container mt-4">
         {/* Desde el backend */}
@@ -53,28 +75,6 @@ function Home() {
       {/* Imagen principal de venta */}
       <div className="sale__banner--container mt-4">
         <img src={tiendaImg2} alt="img-banner2"></img>
-      </div>
-      <div className="recent-products-container container mt-4">
-        <h2>Categorias</h2>
-        <Row>
-          {categories.map((category) => (
-            <LinkContainer
-              to={`/category/${category.name.toLocaleLowerCase()}`}
-            >
-              <Col md={4}>
-                <div
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${category.img})`,
-                    gap: "5px",
-                  }}
-                  className="category-tile"
-                >
-                  {category.name}
-                </div>
-              </Col>
-            </LinkContainer>
-          ))}
-        </Row>
       </div>
       <div>
         <h1></h1>
