@@ -2,10 +2,10 @@ require("dotenv").config();
 
 const mongoose = require("mongoose");
 
-const connectionStr = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PW}@cluster0.n0xby90.mongodb.net/tienda-online?retryWrites=true&w=majority`;
+const CONNECTION_MONGODB = process.env.CONNECTION_MONGODB;
 
 mongoose
-  .connect(connectionStr, { useNewUrlparser: true })
+  .connect(CONNECTION_MONGODB, { useNewUrlparser: true })
   .then(() => console.log("Conexion MongoDB"))
   .catch((err) => console.log(err));
 
