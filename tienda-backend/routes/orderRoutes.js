@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
   const io = req.app.get("socketio");
 
   // Se obtienen los datos de la solicitud,
-  const { userId, cart, country, address } = req.body;
+  const { userId, cart, country, address, phone } = req.body;
   try {
     // Se busca el usuario por su id.
     const user = await User.findById(userId);
@@ -19,6 +19,7 @@ router.post("/", async (req, res) => {
       products: cart,
       country,
       address,
+      phone,
     });
 
     // Se establece el total y la cantidad de productos en la orden.

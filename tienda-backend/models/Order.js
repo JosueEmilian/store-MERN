@@ -31,6 +31,9 @@ const OrderSchema = mongoose.Schema(
     country: {
       type: String,
     },
+    phone: {
+      type: String,
+    },
   },
   { minimize: false }
 );
