@@ -118,3 +118,4 @@ export default appApi;
 
 //https://store-mern-yno3.vercel.app/category/alimentos
 //https://store-mern-pkf47ktkg-josueemilian.vercel.app/products/category/alimentos
+//https://store-mern-yno3.vercel.app/category/alimentos
