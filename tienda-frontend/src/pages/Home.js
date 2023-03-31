@@ -19,8 +19,8 @@ function Home() {
 
   useEffect(() => {
     axios.get("/products").then(({ data }) => dispatch(updateProducts(data)));
-  }, []);
-
+  }, [dispatch]);
+  //react hook useEffect has a missing dependency: 'dispatch'. Either include it or remove the dependency array
   return (
     <div>
       {/* <img src={tiendaImg} alt="img-banner" className="home-banner" /> */}

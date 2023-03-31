@@ -11,7 +11,7 @@ function Footer() {
             <ul className="list-unstyled text-muted">
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Acerca De
@@ -19,7 +19,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   productos
@@ -32,7 +32,7 @@ function Footer() {
             <ul className="list-unstyled text-muted">
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Politicas de Privacidad
@@ -40,7 +40,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Licencia
@@ -48,7 +48,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="/"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Terminos &amp; Condiciones

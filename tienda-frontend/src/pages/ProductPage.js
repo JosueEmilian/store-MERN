@@ -49,6 +49,7 @@ function ProductPage() {
 
   const images = product.pictures.map((picture) => (
     <img
+      alt="product"
       className="product__carousel--image"
       src={picture.url}
       onDragStart={handleDragStart}

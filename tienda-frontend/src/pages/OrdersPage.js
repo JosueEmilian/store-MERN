@@ -7,11 +7,11 @@ import "./OrdersPage.css";
 
 function OrdersPage() {
   const user = useSelector((state) => state.user);
-  const products = useSelector((state) => state.products);
+  // const products = useSelector((state) => state.products);
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [orderToShow, setOrderToShow] = useState([]);
-  const [show, setShow] = useState(false);
+  // const [orderToShow, setOrderToShow] = useState([]);
+  // const [show, setShow] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -25,7 +25,9 @@ function OrdersPage() {
         setLoading(false);
         console.log(e);
       });
-  }, []);
+  }, [user._id]);
+
+  //react hook useEffect has a missing dependency: 'user._id'. Either include it or remove the dependency array.
 
   if (loading) {
     return <Loading />;

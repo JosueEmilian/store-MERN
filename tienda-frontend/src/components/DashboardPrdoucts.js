@@ -12,7 +12,7 @@ function DashboardProducts() {
   const products = useSelector((state) => state.products);
   const user = useSelector((state) => state.user);
 
-  const [deleteProduct, { isLoading, isSuccess }] = useDeleteProductMutation();
+  const [deleteProduct, { isLoading }] = useDeleteProductMutation();
   const [showAlert, setShowAlert] = useState(false);
   const [productToDelete, setProductToDelete] = useState(null);
   const [isProductDeleted, setIsProductDeleted] = useState(false);

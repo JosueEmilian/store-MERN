@@ -8,7 +8,7 @@ import "./CategoryPage.css";
 function CategoryPage() {
   const { category } = useParams();
 
-  const [loading, setLoading] = useState(false);
+  const [setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -24,7 +24,7 @@ function CategoryPage() {
         setLoading(false);
         console.log(e.message);
       });
-  }, [category]);
+  }, [category, setLoading]);
 
   if (Loading) {
     <Loading />;

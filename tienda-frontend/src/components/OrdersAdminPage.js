@@ -8,8 +8,8 @@ function OrdersAdminPage() {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
   const products = useSelector((state) => state.products);
-  const [orderToShow, setOrderToShow] = useState([]);
-  const [show, setShow] = useState(false);
+  // const [orderToShow, setOrderToShow] = useState([]);
+  // const [show, setShow] = useState(false);
 
   function markShipped(orderId, ownerId) {}
 
