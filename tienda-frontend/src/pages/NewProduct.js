@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useCreateProductMutation } from "../services/appApi";
 import axios from "../axios";
 import "./NewProduct.css";
+// require("dotenv").config();
 
 export default function NewProduct() {
   const [name, setName] = React.useState("");
@@ -46,8 +47,8 @@ export default function NewProduct() {
   }
 
   function showWidget() {
-    const cloudNamee = process.env.CLOUD_NAME;
-    const uploadPresett = process.env.UPLOAD_PRESET;
+    // const cloudNamee = process.env.CLOUD_NAME;
+    // const uploadPresett = process.env.UPLOAD_PRESET;
 
     const widget = window.cloudinary.createUploadWidget(
       {
