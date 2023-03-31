@@ -9,7 +9,7 @@ require("./connection");
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
-  cors: process.env.CORS,
+  cors: "http://localhost:3000",
   methods: ["GET", "POST", "PATCH", "DELETE"],
 });
 const port = process.env.PORT || 8081;
