@@ -1,0 +1,33 @@
+.signup__image--container{
+    background-image: url(../images/tienda.jpeg );
+    height: 90vh;
+    background-size: cover;
+}
+
+.signup__form--container,
+.login__form--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login__image--container{
+    background-image: url(../images/tienda.jpeg );
+    height: 90vh;
+    background-size: cover;
+}
+
+@media screen and (max-width: 756px){
+    .signup__image--container,
+    .login__image--container, .sale__banner--container{
+        display: none;
+    }
+}
+
+.sale__banner--container{
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}

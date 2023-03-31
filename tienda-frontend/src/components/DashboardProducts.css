@@ -1,0 +1,29 @@
+.dashboard-product-preview{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+  .btn-warning:hover {
+    background-color: #ff6a00;
+    border-color: #ff6a00;
+    color: #fff;
+  }
+
+  tr:hover td {
+    background-color: rgb(255, 249, 246);
+  }
+  
+  /* .alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
+  .dashboard-container {
+    position: relative;
+  }
+   */
