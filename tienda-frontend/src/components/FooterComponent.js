@@ -11,7 +11,7 @@ function Footer() {
             <ul className="list-unstyled text-muted">
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="*"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Acerca De
@@ -19,7 +19,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="*"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   productos
@@ -32,7 +32,7 @@ function Footer() {
             <ul className="list-unstyled text-muted">
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="*"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Politicas de Privacidad
@@ -40,7 +40,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="*"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Licencia
@@ -48,10 +48,55 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <a
-                  href="#"
+                  href="*"
                   className="text-reset text-decoration-none hover-underline"
                 >
                   Terminos &amp; Condiciones
+                </a>
+              </li>
+            </ul>
+          </Col>
+          <Col md={3}>
+            <h2 className="mb-4 text-uppercase">Información</h2>
+            <ul className="list-unstyled text-muted">
+              <li className="mb-2">
+                <a
+                  href="*"
+                  className="text-reset text-decoration-none hover-underline"
+                >
+                  Fotografía
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="*"
+                  className="text-reset text-decoration-none hover-underline"
+                >
+                  Calificación de usuarios
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="*"
+                  className="text-reset text-decoration-none hover-underline"
+                >
+                  Localización
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="*"
+                  className="text-reset text-decoration-none hover-underline"
+                >
+                  Contactos
+                </a>
+              </li>
+              <li className="mb-2">
+                <a
+                  href="*"
+                  className="text-reset text-decoration-none hover-underline"
+                >
+                  Reseñas
                 </a>
               </li>
             </ul>
